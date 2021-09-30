@@ -11,7 +11,7 @@ header {
 
 #bg {
     grid-area: left;
-    background: url('https://s3.us-west-2.amazonaws.com/secure.notion-static.com/e556cbcc-273c-49c1-b000-9b8eace06903/home-bg-img.svg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210928%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20210928T230238Z&X-Amz-Expires=86400&X-Amz-Signature=f289fcbc465a0830e0dcd117e1fc895a15af1ea0e9a52b20617d1329c31fb24f&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22home-bg-img.svg%22') no-repeat top/contain;
+    background: url('../assets/backgroud.svg') no-repeat top/contain;
     background-position: -10rem;
 }
 
@@ -62,4 +62,32 @@ button,
     color: var(--grey-blue);
     font-family: 'Poppins', sans-serif;
     padding: 0 1.35rem;
+}
+
+.separator {
+    margin: 4rem 0;
+}
+
+
+/* create balls */
+
+.ball {
+    width: 21.2rem;
+    height: 21.2rem;
+    clip-path: circle();
+    background: var(--Blue);
+    position: fixed;
+    opacity: 0.1;
+}
+
+.ball.top {
+    top: -46rem;
+    right: -35rem;
+    height: 63.3rem;
+    width: 63.3rem;
+}
+
+.ball.bottom {
+    bottom: -15rem;
+    right: 5.6rem;
 }
