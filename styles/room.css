@@ -53,6 +53,7 @@ main form {
     border: .2rem solid var(--grey-blue);
     padding: 1.6rem;
     border-radius: 0 .8rem .8rem .8rem;
+    margin-bottom: 1.6rem;
 }
 
 main textarea {
@@ -90,5 +91,5 @@ main form footer button {
     height: auto;
     padding: .8rem 2.4rem;
     font-weight: 500;
-    font-family: ;
+    font-family: 'Poppins', sans-serif;
 }
