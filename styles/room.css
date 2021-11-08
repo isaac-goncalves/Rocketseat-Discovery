@@ -137,3 +137,10 @@ main form footer button {
 .question-wrapper .actions>a+a {
     margin-left: 2.4rem;
 }
+
+
+/*  */
+
+.question-wrapper.read {
+    background: var(--grey-midium);
+}
