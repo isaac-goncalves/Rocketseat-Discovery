@@ -5,4 +5,11 @@
     top: 0;
     left: 0;
     background: rgb(4, 9, 17, .8);
+    display: flex;
+}
+
+.modal-wrapper .modal {
+    width: min(59rem, 90%);
+    background: var(--white);
+    margin: ;
 }
