@@ -1,1 +1,8 @@
-.modal
+.modal-wrapper {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgb(4, 9, 17, .8);
+}
