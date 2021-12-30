@@ -27,28 +27,8 @@
         <div id="bg"></div>
         <main>
             <div class="container">
-                <section>
-                    <h1>Entre como participante</h1>
-                    <form action="">
-                        <label class="sr-only" for="room-id">Código da sala</label>
-                        <input type="text" id="room-id" placeholder="Código da sala ">
-                        <button>
-                            <img src="images/icon-login.svg" alt="Botão de login">
-                            Entrar na sala
-                        </button>
-                    </form>
-                </section>
-                <div class="separator">
-                    <div></div>
-                    <div>ou</div>
-                    <div></div>
-                </div>
-                <section>
-                    <h2>Crie Sua Propria sala de forma fácil</h2>
-                    <a href="create-room.html" class="button outlined">
-                        <img src="images/icon-groups.svg" alt="">Criar sala
-                    </a>
-                </section>
+                <!-- Vai renderizar a parte correta de acordo com a URL -->
+                <%- include(`parts/${page}`) %>
             </div>
         </main>
     </div>
