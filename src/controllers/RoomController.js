@@ -1,6 +1,7 @@
 module.exports = {
     create(req, res) {
-        let roomId = 1234
+
+        var roomId = 123456
 
         res.redirect(`/room/${roomId}`)
     }
