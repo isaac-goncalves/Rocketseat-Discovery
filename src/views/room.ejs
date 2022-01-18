@@ -28,8 +28,8 @@
                 <img src="/images/logo.svg" alt="Rocket.Q logo">
             </a>
             <div class="buttons">
-                <div class="button outlined" id="room-id" data-id="323243">
-                    #323243 <img src="/images/icon-copy.svg" alt="Copiar numero da sala">
+                <div class="button outlined" id="room-id" data-id="<%= roomId %>">
+                    #<%= roomId %> <img src="/images/icon-copy.svg" alt="Copiar numero da sala">
                 </div>
                 <a href="#" class="button">
                     <img src="/images/icon-groups-white.svg" alt="Criar uma sala"> Criar Sala
@@ -41,7 +41,7 @@
             <section class="question-form"></section>
             <h2>Faça sua pergunta</h2>
 
-            <form action="">
+            <form action="/question/create/<%= roomId %>" method="POST">
                 <label for-id="question" class="sr-only">O que você quer perguntar?</label>
                 <textarea name="question" placeholder="O que você quer perguntar?" id="questions"></textarea>
 
@@ -56,7 +56,6 @@
             <section id="questions">
                 <h2 class="sr-only">Perguntas da Comunidade</h2>
                 <div class="questions">
-
 
                     <div class="question-wrapper">
                         <div class="question-content">
